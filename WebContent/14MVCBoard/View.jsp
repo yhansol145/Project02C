@@ -6,7 +6,7 @@
 <html>
 <head>
 <meta charset="UTF-8">
-<title>파일첨부형 게시판</title>
+<title></title>
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="stylesheet"
 	href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
@@ -84,7 +84,7 @@
 	</nav>
 	</div>
 	<h2 style="text-align: center; margin-top: 50px;">Detail View</h2>
-	<table border="5" width="90%" style="margin-right: auto; margin-left: auto;">
+	<table border="5" width="70%" style="margin-right: auto; margin-left: auto;">
 		<colgroup>
 			<col width="15%" />
 			<col width="35%" />
@@ -169,7 +169,7 @@ function commentValidate(f){
 		onsubmit="return commentValidate(this);">
 		<!-- 해당 게시물의 일련번호로 댓글 테이블의 참조키가 된다. -->
 		<input type="hidden" name="board_idx" value="${param.idx }" />
-		<table border="5" width="90%" style="margin-right: auto; margin-left: auto;">
+		<table border="5" width="70%" style="margin-right: auto; margin-left: auto;">
 			<colgroup>
 				<col width="30%" />
 				<col width="40%" />
@@ -205,7 +205,7 @@ function commentDelete(idx, board_idx){
 	사용시에는 쿼리스트링 마지막에 #앵커명 형태로 사용하면 된다.
 -->
 		<a name="commentsList"></a>
-		<table border="5" width="90%" style="margin-right: auto; margin-left: auto;">
+		<table border="5" width="70%" style="margin-right: auto; margin-left: auto;">
 			<colgroup>
 				<col width="30%" />
 				<col width="40%" />

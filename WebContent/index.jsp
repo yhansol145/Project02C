@@ -19,7 +19,7 @@
 	height: 200px;
 	background: #aaa;
 }
-\
+
 .navbar {
 	font-size: 20px;
 	text-align: center;
@@ -36,7 +36,6 @@
 .nav-item{
 	margin-left: 75px;
 }
-
 
 </style>
 </head>
@@ -59,7 +58,7 @@
 		<p>Resize this responsive page to see the effect</p>
 	</div>
 	
-	<nav class="navbar navbar-expand-sm bg-dark navbar-dark">
+	<nav class="navbar navbar-expand-sm bg-dark navbar-dark" style="text-align: center;">
 		<a class="navbar-brand" href="#">HOME</a>
 		<button class="navbar-toggler" type="button" data-toggle="collapse"
 			data-target="#collapsibleNavbar">
@@ -69,7 +68,7 @@
 			<ul class="navbar-nav">
 				<li class="nav-item"><a class="nav-link" href="./Nav/CategoryMain.jsp">CATEGORY</a></li>
 				<li class="nav-item"><a class="nav-link" href="./Nav/ServiceMain.jsp">SERVICE</a></li>
-				<li class="nav-item"><a class="nav-link" href="./Nav/ReviewMain.jsp">REVIEW</a></li>
+				<li class="nav-item"><a class="nav-link" href="./mvcboard/list.do">REVIEW</a></li>
 				<li class="nav-item"><a class="nav-link" href="./Nav/QnaMain.jsp">Q&A</a></li>
 			</ul>
 		</div>

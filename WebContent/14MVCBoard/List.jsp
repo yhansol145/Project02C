@@ -7,7 +7,7 @@
 <html>
 <head>
 <meta charset="UTF-8">
-<title>파일첨부형 게시판</title>
+<title></title>
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="stylesheet"
 	href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
@@ -88,7 +88,7 @@
 	<h2 style="text-align: center; margin-top: 50px;">Review</h2>
 
 	<form method="get">
-		<table border="5" width="90%"
+		<table border="5" width="70%"
 			style="margin-right: auto; margin-left: auto; margin-top: 50px;">
 			<tr>
 				<td align="center"><select name="searchField">
@@ -99,7 +99,7 @@
 			</tr>
 		</table>
 	</form>
-	<table border="5" width="90%"
+	<table border="5" width="70%"
 		style="text-align: center; margin-right: auto; margin-left: auto;">
 		<tr>
 			<th width="10%">번호</th>
@@ -145,7 +145,7 @@
 			</c:otherwise>
 		</c:choose>
 	</table>
-	<table border="5" width="90%"
+	<table border="5" width="70%"
 		style="margin-right: auto; margin-left: auto;">
 		<tr align="center">
 			<td>
