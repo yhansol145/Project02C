@@ -33,6 +33,7 @@ public class MembershipDAO {
 			e.printStackTrace();
 		}
 	}
+	
 
 	/*
 	 * JSP에서 컨텍스트 초기화 파라미터를 읽어서 매개변수로 전달하여 DB연결을 하기위한 인자 생성
