@@ -26,7 +26,7 @@
 // 					document.overlapFrm.retype_id.value;
 // 				self.close();
 // 			}
-<!-- 		</script> -->
+</script>
 
 <style>
 .AllWrap {
@@ -34,7 +34,7 @@
 }
 
 .wrap_regiform {
-	border: 1px solid red;
+	border: 5px solid black;
 	width: 720px;
 	padding: 5px 10px;
 }
@@ -395,7 +395,7 @@
 				<li class="nav-item"><a class="nav-link"
 					href="../Nav/ServiceMain.jsp">SERVICE</a></li>
 				<li class="nav-item"><a class="nav-link"
-					href="../Nav/ReviewMain.jsp">REVIEW</a></li>
+					href="../mvcboard/list.do">REVIEW</a></li>
 				<li class="nav-item"><a class="nav-link"
 					href="../Nav/QnaMain.jsp">Q&A</a></li>
 			</ul>

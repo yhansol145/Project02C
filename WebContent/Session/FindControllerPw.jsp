@@ -15,8 +15,6 @@ MembershipDTO dto = new MembershipDTO();
 dto.setId(id);
 dto.setEmail(email);
 
-
-
 String user_pw = dao.findPw(dto);
 %>
 

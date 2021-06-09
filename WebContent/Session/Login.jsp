@@ -89,7 +89,7 @@
 				<li class="nav-item"><a class="nav-link"
 					href="../Nav/ServiceMain.jsp">SERVICE</a></li>
 				<li class="nav-item"><a class="nav-link"
-					href="../Nav/ReviewMain.jsp">REVIEW</a></li>
+					href="../mvcboard/list.do">REVIEW</a></li>
 				<li class="nav-item"><a class="nav-link"
 					href="../Nav/QnaMain.jsp">Q&A</a></li>
 			</ul>
@@ -163,7 +163,7 @@
 				<li class="nav-item"><a class="nav-link"
 					href="../Nav/ServiceMain.jsp">SERVICE</a></li>
 				<li class="nav-item"><a class="nav-link"
-					href="../Nav/ReviewMain.jsp">REVIEW</a></li>
+					href="../mvcboard/list.do">REVIEW</a></li>
 				<li class="nav-item"><a class="nav-link"
 					href="../Nav/QnaMain.jsp">Q&A</a></li>
 			</ul>
@@ -175,7 +175,7 @@
 		style="margin-right: auto; margin-left: auto; margin-top: 75px;">
 		<tr>
 			<td style="text-align: center;"><%=session.getAttribute("USER_NAME")%>
-				회원님, 로그인 하셨습니다. <br /> 즐거운 시간 보내세요 ^^* <br /> <a href="Logout.jsp">[로그아웃]</a></td>
+				회원님, 로그인 하셨습니다. <br /> 즐거운 시간 보내세요 ^^* <br /> <a href="../index.jsp">[쇼핑하러 가기]</a></td>
 		</tr>
 	</table>
 	<%

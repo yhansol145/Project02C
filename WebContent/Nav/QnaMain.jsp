@@ -63,10 +63,14 @@
 		</button>
 		<div class="collapse navbar-collapse" id="collapsibleNavbar">
 			<ul class="navbar-nav">
-				<li class="nav-item"><a class="nav-link" href="CategoryMain.jsp">CATEGORY</a></li>
-				<li class="nav-item"><a class="nav-link" href="ServiceMain.jsp">SERVICE</a></li>
-				<li class="nav-item"><a class="nav-link" href="ReviewMain.jsp">REVIEW</a></li>
-				<li class="nav-item"><a class="nav-link" href="#">Q&A</a></li>
+				<li class="nav-item"><a class="nav-link"
+					href="../Nav/CategoryMain.jsp">CATEGORY</a></li>
+				<li class="nav-item"><a class="nav-link"
+					href="../Nav/ServiceMain.jsp">SERVICE</a></li>
+				<li class="nav-item"><a class="nav-link"
+					href="../mvcboard/list.do">REVIEW</a></li>
+				<li class="nav-item"><a class="nav-link"
+					href="../Nav/QnaMain.jsp">Q&A</a></li>
 			</ul>
 		</div>
 	</nav>
