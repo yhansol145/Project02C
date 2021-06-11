@@ -79,7 +79,7 @@
 				<li class="nav-item"><a class="nav-link"
 					href="../mvcboard/list.do">REVIEW</a></li>
 				<li class="nav-item"><a class="nav-link"
-					href="../Nav/QnaMain.jsp">Q&A</a></li>
+					href="../08Board/ListSimple.jsp">Q&A</a></li>
 			</ul>
 		</div>
 	</nav>
@@ -88,7 +88,7 @@
 	<h2 style="text-align: center; margin-top: 50px;">Review</h2>
 
 	<form method="get">
-		<table border="5" width="70%"
+		<table width="70%"
 			style="margin-right: auto; margin-left: auto; margin-top: 50px;">
 			<tr>
 				<td align="center"><select name="searchField">

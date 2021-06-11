@@ -397,7 +397,7 @@
 				<li class="nav-item"><a class="nav-link"
 					href="../mvcboard/list.do">REVIEW</a></li>
 				<li class="nav-item"><a class="nav-link"
-					href="../Nav/QnaMain.jsp">Q&A</a></li>
+					href="../08Board/ListSimple.jsp">Q&A</a></li>
 			</ul>
 		</div>
 	</nav>
@@ -409,7 +409,7 @@
 		<div class="AllWrap">
 			<div class="wrap_regiform" style="margin: 0px auto;">
 				<p>*필수입력사항</p>
-				<table class="regi_table"">
+				<table class="regi_table">
 					<colgroup>
 						<col width="180px">
 						<col width="*">

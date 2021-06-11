@@ -91,7 +91,7 @@
 				<li class="nav-item"><a class="nav-link"
 					href="../mvcboard/list.do">REVIEW</a></li>
 				<li class="nav-item"><a class="nav-link"
-					href="../Nav/QnaMain.jsp">Q&A</a></li>
+					href="../08Board/ListSimple.jsp">Q&A</a></li>
 			</ul>
 		</div>
 	</nav>
@@ -165,7 +165,7 @@
 				<li class="nav-item"><a class="nav-link"
 					href="../mvcboard/list.do">REVIEW</a></li>
 				<li class="nav-item"><a class="nav-link"
-					href="../Nav/QnaMain.jsp">Q&A</a></li>
+					href="../08Board/ListSimple.jsp">Q&A</a></li>
 			</ul>
 		</div>
 	</nav>

@@ -3,7 +3,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<title>index.jsp</title>
+<title>HansolShop</title>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="stylesheet"
@@ -15,6 +15,7 @@
 <script
 	src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 <style>
+
 .fakeimg {
 	height: 200px;
 	background: #aaa;
@@ -69,7 +70,7 @@
 				<li class="nav-item"><a class="nav-link" href="./Nav/CategoryMain.jsp">CATEGORY</a></li>
 				<li class="nav-item"><a class="nav-link" href="./Nav/ServiceMain.jsp">SERVICE</a></li>
 				<li class="nav-item"><a class="nav-link" href="./mvcboard/list.do">REVIEW</a></li>
-				<li class="nav-item"><a class="nav-link" href="./Nav/QnaMain.jsp">Q&A</a></li>
+				<li class="nav-item"><a class="nav-link" href="./08Board/ListSimple.jsp">Q&A</a></li>
 			</ul>
 		</div>
 	</nav>

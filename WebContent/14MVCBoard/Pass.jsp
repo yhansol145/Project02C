@@ -84,12 +84,12 @@
 				<li class="nav-item"><a class="nav-link" href="../Nav/CategoryMain.jsp">CATEGORY</a></li>
 				<li class="nav-item"><a class="nav-link" href="../Nav/ServiceMain.jsp">SERVICE</a></li>
 				<li class="nav-item"><a class="nav-link" href="./list.do">REVIEW</a></li>
-				<li class="nav-item"><a class="nav-link" href="../Nav/QnaMain.jsp">Q&A</a></li>
+				<li class="nav-item"><a class="nav-link" href="../08Board/ListSimple.jsp">Q&A</a></li>
 			</ul>
 		</div>
 	</nav>
 	</div>
-	<h2 style="margin-top: 50px; text-align: center;">Insert PassWord</h2>
+	<h2 style="margin-top: 50px; text-align: center; margin-bottom: 50px;">Insert PassWord</h2>
 	<!--  
 	파일 첨부가 없는 페이지에서는 enctype을 제거하는것이 좋다. 
 	만약 enctype 속성이 있다면 request객체를 통해 폼값을 받을수 없다. 
@@ -106,7 +106,7 @@
 -->
 		<input type="hidden" name="idx" value="${param.idx }" /> <input
 			type="hidden" name="mode" value="${mode }" />
-		<table border="5" width="90%" style="margin-right: auto; margin-left: auto;">
+		<table border="5" width="70%" style="margin-right: auto; margin-left: auto;">
 			<tr>
 				<td>비밀번호</td>
 				<td><input type="password" name="pass" style="width: 100px;" />
@@ -114,7 +114,7 @@
 			</tr>
 			<tr>
 				<td colspan="2" align="center">
-					<button type="submit">검증하기</button>
+					<button type="submit">확인</button>
 					<button type="reset">RESET</button>
 					<button type="button"
 						onclick="location.href='../mvcboard/list.do';">리스트바로가기</button>

@@ -114,7 +114,8 @@
 	<h2 style="text-align: center; margin-top: 50px;">New Write</h2>
 	<form name="writeFrm" method="post" enctype="multipart/form-data"
 		action="../mvcboard/write.do" onsubmit="return formValidate(this);">
-		<table border="5" width="90%" style="margin-top: 50px; margin-right: auto; margin-left: auto;">
+		<table border="5" width="90%" 
+		style="margin-top: 50px; margin-right: auto; margin-left: auto; ">
 			<tr>
 				<td>작성자</td>
 				<td><input type="text" name="name" style="width: 150px;" /></td>

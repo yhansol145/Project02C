@@ -63,22 +63,19 @@
 		</button>
 		<div class="collapse navbar-collapse" id="collapsibleNavbar">
 			<ul class="navbar-nav">
-				<li class="nav-item"><a class="nav-link"
-					href="../Nav/CategoryMain.jsp">CATEGORY</a></li>
-				<li class="nav-item"><a class="nav-link"
-					href="../Nav/ServiceMain.jsp">SERVICE</a></li>
-				<li class="nav-item"><a class="nav-link"
-					href="../mvcboard/list.do">REVIEW</a></li>
-				<li class="nav-item"><a class="nav-link"
-					href="../Nav/QnaMain.jsp">Q&A</a></li>
+				<li class="nav-item"><a class="nav-link" href="CategoryMain.jsp">CATEGORY</a></li>
+				<li class="nav-item"><a class="nav-link" href="ServiceMain.jsp">SERVICE</a></li>
+				<li class="nav-item"><a class="nav-link" href="../mvcboard/list.do">REVIEW</a></li>
+				<li class="nav-item"><a class="nav-link" href="../08Board/ListSimple.jsp">Q&A</a></li>
 			</ul>
 		</div>
 	</nav>
 	</div>
-	<div style="display:block; margin-right: auto; margin-left: auto;">
-		<a href="Top.jsp"><img src=../images/top.jpg style="display:inline; width: 250px; height: 350;" /></a>
-		<a href="Bottom.jsp"><img src=../images/bottom.jpg style="display:inline; width: 250px; height: 350;" /></a>
-		<a href="Acc.jsp"><img src=../images/acc.jpg style="display:inline; width: 250px; height: 350;" /></a>
+	<div style="display:table; margin-right: auto; margin-left: auto; margin-top: 50px;">
+		<a href="Top.jsp"><img src=../images/top.jpg style="display:inline; width: 250px; height: 350; margin-right: 20px;" /></a>
+		<a href="Bottom.jsp"><img src=../images/bottom.jpg style="display:inline; width: 250px; height: 350; margin-right: 20px;" /></a>
+		<a href="Shoes.jsp"><img src=../images/shoes.jpg style="display:inline; width: 250px; height: 350;" /></a>
+		<a href="Acc.jsp"><img src=../images/acc.jpg style="display:inline; width: 250px; height: 350; margin-right: 20px;" /></a>
 	</div>
 	<%@ include file="../layout/footer.jsp"%>
 </body>

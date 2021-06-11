@@ -69,17 +69,17 @@
 				<li class="nav-item"><a class="nav-link"
 					href="../mvcboard/list.do">REVIEW</a></li>
 				<li class="nav-item"><a class="nav-link"
-					href="../Nav/QnaMain.jsp">Q&A</a></li>
+					href="../08Board/ListSimple.jsp">Q&A</a></li>
 			</ul>
 		</div>
 	</nav>
 	</div>
-	<h2 style="text-align: center; margin-top: 75px; margin-bottom: 50px;">Event</h2>
+	<h2 style="text-align: center; margin-top: 50px; margin-bottom: 50px;">Event</h2>
 	<a href="Event01.jsp"><img src=../images/bannerImage0.jpg style="display:block; width:1000px; height:150px; margin-left: auto; margin-right: auto;" /></a>
 	<a href="Event02.jsp"><img src=../images/bannerImage1.jpg style="display:block; width:1000px; height:150px; margin-left: auto; margin-right: auto;" /></a>
 	<a href="Event03.jsp"><img src=../images/bannerImage2.jpg style="display:block; width:1000px; height:150px; margin-left: auto; margin-right: auto;" /></a>
 	
-	<h2 style="text-align: center; margin-top: 75px">찾아오시는 길</h2>
+	<h3 style="text-align: center; margin-top: 75px">찾아오시는 길</h3>
 	<div id="map"
 		style="width: 1000px; height: 700px; margin: 0px auto; margin-top: 50px;"></div>
 	<script type="text/javascript"

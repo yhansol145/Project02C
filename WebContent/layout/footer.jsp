@@ -70,8 +70,9 @@ footer {
 				<div class="footer-text">주소 : 경기도 고양시 화신로</div>
 				<div class="footer-text">회사명 : (주)HansolShop | 대표 : 유한솔</div>
 				<div class="footer-link-company">
-					<a>이용약관</a> <span class="footer-sep"> | </span> <a>개인정보처리방침</a> <span
-						class="footer-sep"> | </span> <a>사업자정보확인</a>
+					<a>이용약관</a> <span class="footer-sep"> | </span> 
+					<a>개인정보처리방침</a> <span class="footer-sep"> | </span> 
+					<a>사업자정보확인</a>
 				</div>
 			</div>
 		</div>
