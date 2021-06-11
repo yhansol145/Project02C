@@ -9,12 +9,12 @@ public class CommentDTO {
     private String comments;
 //    private String commentsEdit; //댓글 수정때문에 추가
     private java.sql.Date regidate;
-	
-    public int getIdx() {
+    
+	public int getIdx() {
 		return idx;
 	}
 	public void setIdx(int idx) {
-		this.idx = idx; 
+		this.idx = idx;
 	}
 	public String getBoard_idx() {
 		return board_idx;
@@ -40,17 +40,13 @@ public class CommentDTO {
 	public void setComments(String comments) {
 		this.comments = comments;
 	}
-//	public String getCommentsEdit() {
-//		return commentsEdit;
-//	}
-//	public void setCommentsEdit(String commentsEdit) {
-//		this.commentsEdit = commentsEdit;
-//	}
 	public java.sql.Date getRegidate() {
 		return regidate;
 	}
 	public void setRegidate(java.sql.Date regidate) {
 		this.regidate = regidate;
 	}
+	
+    
 	
 }

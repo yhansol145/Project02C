@@ -391,4 +391,25 @@ public class MembershipDAO {
 		return user_pw;
 	}
 	
+	public boolean checkId(String Id) {
+	
+		boolean check = false;
+		
+		try {
+			con = DriverManager.getConnection(Id);
+			String query = "SELECT * FROM member WHERE Id=?";
+			psmt = con.prepareStatement(Id);
+			psmt.setString(1, Id);
+			rs = psmt.executeQuery();
+			check= rs.next();
+		}
+		catch(Exception e) {
+			e.printStackTrace();
+			System.out.println("아이디 체크 중 예외발생");
+		}
+		
+		return check;
+		
+	}
+	
 }

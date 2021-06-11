@@ -60,7 +60,7 @@ public class CommentController extends HttpServlet {
 		String comments = req.getParameter("comments");
 		// DTO객체에 저장
 		CommentDTO dto = new CommentDTO();
-		dto.setBoard_idx(board_idx);
+		dto.setBoard_idx(board_idx); 
 		dto.setName(name);
 		dto.setPass(pass);
 		dto.setComments(comments);

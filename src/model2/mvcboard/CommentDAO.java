@@ -37,8 +37,7 @@ public class CommentDAO extends ConnectionPool {
 	public List<CommentDTO> commentSelectList(String board_idx) {
 		List<CommentDTO> comments = new Vector<CommentDTO>();
 
-		// 댓글 작성일을 시:분 까지 출력하기 위해 to_char()함수를 사용함
-		String query = "SELECT idx, board_idx, name, pass, comments, regidate "
+		String query = "SELECT idx, board_idx, name, pass, comments "
 				+ " FROM mycomment " + " WHERE board_idx=? " + " ORDER BY idx DESC";
 		try {
 			psmt = con.prepareStatement(query);
@@ -54,7 +53,7 @@ public class CommentDAO extends ConnectionPool {
 				dto.setPass(rs.getString(4));
 				dto.setComments(rs.getString(5).replaceAll("\r\n", "<br/>"));
 //				dto.setCommentsEdit(rs.getString(6));
-				dto.setRegidate(rs.getDate(6)); 
+//				dto.setRegidate(rs.getDate(6)); 
 
 				comments.add(dto);
 			}
