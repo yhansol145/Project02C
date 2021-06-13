@@ -398,7 +398,7 @@ public class MembershipDAO {
 		try {
 			con = DriverManager.getConnection(Id);
 			String query = "SELECT * FROM member WHERE Id=?";
-			psmt = con.prepareStatement(Id);
+			psmt = con.prepareStatement(query);
 			psmt.setString(1, Id);
 			rs = psmt.executeQuery();
 			check= rs.next();
