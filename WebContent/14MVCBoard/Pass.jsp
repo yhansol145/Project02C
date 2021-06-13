@@ -52,6 +52,13 @@
 </head>
 <body>
 	<div class="jumbotron text-center" style="margin-bottom: 0">
+		<form id="headerSearchForm" method="post" action="/product?cmd=search">
+			<input style="width: 20%;" name="keyword"
+				placeholder="상품명 또는 브랜드명으로 검색" class="headerSearchForm-input">
+			<button class="headerSearchForm-btn">
+				<i class="tiny material-icons">search</i>
+			</button>
+		</form>
 
 		<div style="text-align: right;">
 			<%
@@ -81,15 +88,19 @@
 		</button>
 		<div class="collapse navbar-collapse" id="collapsibleNavbar">
 			<ul class="navbar-nav">
-				<li class="nav-item"><a class="nav-link" href="../Nav/CategoryMain.jsp">CATEGORY</a></li>
-				<li class="nav-item"><a class="nav-link" href="../Nav/ServiceMain.jsp">SERVICE</a></li>
+				<li class="nav-item"><a class="nav-link"
+					href="../Nav/CategoryMain.jsp">CATEGORY</a></li>
+				<li class="nav-item"><a class="nav-link"
+					href="../Nav/ServiceMain.jsp">SERVICE</a></li>
 				<li class="nav-item"><a class="nav-link" href="./list.do">REVIEW</a></li>
-				<li class="nav-item"><a class="nav-link" href="../08Board/ListSimple.jsp">Q&A</a></li>
+				<li class="nav-item"><a class="nav-link"
+					href="../08Board/ListSimple.jsp">Q&A</a></li>
 			</ul>
 		</div>
 	</nav>
 	</div>
-	<h2 style="margin-top: 50px; text-align: center; margin-bottom: 50px;">Insert PassWord</h2>
+	<h2 style="margin-top: 50px; text-align: center; margin-bottom: 50px;">Insert
+		PassWord</h2>
 	<!--  
 	파일 첨부가 없는 페이지에서는 enctype을 제거하는것이 좋다. 
 	만약 enctype 속성이 있다면 request객체를 통해 폼값을 받을수 없다. 
@@ -106,7 +117,8 @@
 -->
 		<input type="hidden" name="idx" value="${param.idx }" /> <input
 			type="hidden" name="mode" value="${mode }" />
-		<table border="5" width="70%" style="margin-right: auto; margin-left: auto;">
+		<table border="5" width="70%"
+			style="margin-right: auto; margin-left: auto;">
 			<tr>
 				<td>비밀번호</td>
 				<td><input type="password" name="pass" style="width: 100px;" />

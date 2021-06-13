@@ -60,6 +60,13 @@
 </head>
 <body>
 	<div class="jumbotron text-center" style="margin-bottom: 0">
+		<form id="headerSearchForm" method="post" action="/product?cmd=search">
+			<input style="width: 20%;" name="keyword"
+				placeholder="상품명 또는 브랜드명으로 검색" class="headerSearchForm-input">
+			<button class="headerSearchForm-btn">
+				<i class="tiny material-icons">search</i>
+			</button>
+		</form>
 
 		<div style="text-align: right;">
 			<%
@@ -117,7 +124,8 @@
 		<input type="hidden" name="prevSfile" value="${dto.sfile }" />
 		<!-- 저장된 파일명 -->
 
-		<table border="5" width="70%" style="display: table; margin-right: auto; margin-left: auto;">
+		<table border="5" width="70%"
+			style="display: table; margin-right: auto; margin-left: auto;">
 			<tr>
 				<td>작성자</td>
 				<td><input type="text" name="name" style="width: 150px;"

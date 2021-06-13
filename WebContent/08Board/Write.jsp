@@ -39,15 +39,14 @@
 }
 </style>
 <script type="text/javascript">
-	
 	//쓰기 폼에 빈값이 있는지를 확인해주는 함수
-	function formValidate(f){
-		if(f.title.value==""){
+	function formValidate(f) {
+		if (f.title.value == "") {
 			alert("제목을 입력하세요");
 			f.title.focus();
 			return false;
 		}
-		if(f.content.value==""){
+		if (f.content.value == "") {
 			alert("내용을 입력하세요");
 			f.content.focus();
 			return false;
@@ -57,6 +56,13 @@
 </head>
 <body>
 	<div class="jumbotron text-center" style="margin-bottom: 0">
+		<form id="headerSearchForm" method="post" action="/product?cmd=search">
+			<input style="width: 20%;" name="keyword"
+				placeholder="상품명 또는 브랜드명으로 검색" class="headerSearchForm-input">
+			<button class="headerSearchForm-btn">
+				<i class="tiny material-icons">search</i>
+			</button>
+		</form>
 
 		<div style="text-align: right;">
 			<%
@@ -99,7 +105,8 @@
 		</div>
 	</nav>
 	</div>
-	<h2 style="text-align: center; margin-right: auto; margin-left: auto; margin-top: 50px; margin-bottom: 50px;">Write</h2>
+	<h2
+		style="text-align: center; margin-right: auto; margin-left: auto; margin-top: 50px; margin-bottom: 50px;">Write</h2>
 	<form name="writeFrm" method="post" action="WriteProcess.jsp"
 		onsubmit="return formValidate(this);">
 
@@ -108,7 +115,7 @@
 		똑같이 맞춰주는것이 개발에 유리하다.
 	-->
 		<table border="5" width="70%"
-		style="display: table; margin-right: auto; margin-left: auto;">
+			style="display: table; margin-right: auto; margin-left: auto;">
 			<tr>
 				<td>제목</td>
 				<td><input type="text" name="title" style="width: 90%;" /></td>

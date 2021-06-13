@@ -40,6 +40,13 @@
 </head>
 <body>
 	<div class="jumbotron text-center" style="margin-bottom: 0">
+		<form id="headerSearchForm" method="post" action="/product?cmd=search">
+			<input style="width: 20%;" name="keyword"
+				placeholder="상품명 또는 브랜드명으로 검색" class="headerSearchForm-input">
+			<button class="headerSearchForm-btn">
+				<i class="tiny material-icons">search</i>
+			</button>
+		</form>
 
 		<div style="text-align: right;">
 			<%

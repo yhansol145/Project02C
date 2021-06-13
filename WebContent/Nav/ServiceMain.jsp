@@ -29,26 +29,37 @@
 	text-align: right;
 }
 
-.navbar-brand{
+.navbar-brand {
 	margin-left: 75px;
 }
 
-.nav-item{
+.nav-item {
 	margin-left: 75px;
 }
 </style>
 </head>
 <body>
 	<div class="jumbotron text-center" style="margin-bottom: 0">
+		<form id="headerSearchForm" method="post" action="/product?cmd=search">
+			<input style="width: 20%;" name="keyword"
+				placeholder="상품명 또는 브랜드명으로 검색" class="headerSearchForm-input">
+			<button class="headerSearchForm-btn">
+				<i class="tiny material-icons">search</i>
+			</button>
+		</form>
 		<div style="text-align: right;">
-			<% if(session.getAttribute("USER_ID")==null){ %>
-				<a href="../Session/Login.jsp">LogIn</a>
-			<% }
-			else{ %>
-				<a href="../Session/Logout.jsp">LogOut</a>
-			<% } %>
-			&nbsp;&nbsp;&nbsp;
-			<a href="../Session/SignUp.jsp">SignUp</a>
+			<%
+			if (session.getAttribute("USER_ID") == null) {
+			%>
+			<a href="../Session/Login.jsp">LogIn</a>
+			<%
+			} else {
+			%>
+			<a href="../Session/Logout.jsp">LogOut</a>
+			<%
+			}
+			%>
+			&nbsp;&nbsp;&nbsp; <a href="../Session/SignUp.jsp">SignUp</a>
 		</div>
 		<h1>My First Shop Webpage</h1>
 		<p>Resize this responsive page to see the effect</p>
@@ -75,11 +86,14 @@
 	</nav>
 	</div>
 	<h2 style="text-align: center; margin-top: 50px; margin-bottom: 50px;">Event</h2>
-	<a href="Event01.jsp"><img src=../images/bannerImage0.jpg style="display:block; width:1000px; height:150px; margin-left: auto; margin-right: auto;" /></a>
-	<a href="Event02.jsp"><img src=../images/bannerImage1.jpg style="display:block; width:1000px; height:150px; margin-left: auto; margin-right: auto;" /></a>
-	<a href="Event03.jsp"><img src=../images/bannerImage2.jpg style="display:block; width:1000px; height:150px; margin-left: auto; margin-right: auto;" /></a>
-	
-	<h3 style="text-align: center; margin-top: 75px">찾아오시는 길</h3>
+	<a href="Event01.jsp"><img src=../images/bannerImage0.jpg
+		style="display: block; width: 1000px; height: 150px; margin-left: auto; margin-right: auto;" /></a>
+	<a href="Event02.jsp"><img src=../images/bannerImage1.jpg
+		style="display: block; width: 1000px; height: 150px; margin-left: auto; margin-right: auto;" /></a>
+	<a href="Event03.jsp"><img src=../images/bannerImage2.jpg
+		style="display: block; width: 1000px; height: 150px; margin-left: auto; margin-right: auto;" /></a>
+
+	<h3 style="text-align: center; margin-top: 75px">오프라인매장 위치안내</h3>
 	<div id="map"
 		style="width: 1000px; height: 700px; margin: 0px auto; margin-top: 50px;"></div>
 	<script type="text/javascript"
@@ -103,7 +117,8 @@
 
 		marker.setMap(map);
 	</script>
-	<h5 style="text-align: center; margin-top: 50px;">상세주소 : 경기도 고양시 덕양구 화신로 311</h5>
+	<h5 style="text-align: center; margin-top: 50px;">상세주소 : 경기도 고양시
+		덕양구 화신로 311</h5>
 	<%@ include file="../layout/footer.jsp"%>
 </body>
 </html>

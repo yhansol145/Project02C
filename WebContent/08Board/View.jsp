@@ -78,6 +78,13 @@ dao.close();
 </head>
 <body>
 	<div class="jumbotron text-center" style="margin-bottom: 0">
+		<form id="headerSearchForm" method="post" action="/product?cmd=search">
+			<input style="width: 20%;" name="keyword"
+				placeholder="상품명 또는 브랜드명으로 검색" class="headerSearchForm-input">
+			<button class="headerSearchForm-btn">
+				<i class="tiny material-icons">search</i>
+			</button>
+		</form>
 
 		<div style="text-align: right;">
 			<%
@@ -120,14 +127,15 @@ dao.close();
 		</div>
 	</nav>
 	</div>
-	<h2 style="text-align: center; margin-top: 50px; margin-bottom: 50px;">Detail View</h2>
+	<h2 style="text-align: center; margin-top: 50px; margin-bottom: 50px;">Q&A</h2>
 	<!--  
 		회원제 게시판에서 게시물 삭제를 위해 상세보기에
 		게시물의 일련번호를 hidden 입력상자로 삽입한다.
 	-->
 	<form name="writeFrm">
 		<input type="hidden" name="num" value="<%=num%>" />
-		<table border="5" width="70%" style="display: table; margin-right: auto; margin-left: auto;">
+		<table border="5" width="70%"
+			style="display: table; margin-right: auto; margin-left: auto;">
 			<tr>
 				<td>번호</td>
 				<td><%=dto.getNum()%></td>

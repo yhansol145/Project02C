@@ -68,6 +68,13 @@
 
 	<!-- form -->
 	<div class="jumbotron text-center" style="margin-bottom: 0">
+		<form id="headerSearchForm" method="post" action="/product?cmd=search">
+			<input style="width: 20%;" name="keyword"
+				placeholder="상품명 또는 브랜드명으로 검색" class="headerSearchForm-input">
+			<button class="headerSearchForm-btn">
+				<i class="tiny material-icons">search</i>
+			</button>
+		</form>
 
 		<div style="text-align: right;">
 			<%
@@ -114,8 +121,8 @@
 	<h2 style="text-align: center; margin-top: 50px;">New Write</h2>
 	<form name="writeFrm" method="post" enctype="multipart/form-data"
 		action="../mvcboard/write.do" onsubmit="return formValidate(this);">
-		<table border="5" width="90%" 
-		style="margin-top: 50px; margin-right: auto; margin-left: auto; ">
+		<table border="5" width="90%"
+			style="margin-top: 50px; margin-right: auto; margin-left: auto;">
 			<tr>
 				<td>작성자</td>
 				<td><input type="text" name="name" style="width: 150px;" /></td>

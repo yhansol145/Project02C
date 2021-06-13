@@ -41,7 +41,16 @@
 </style>
 </head>
 <body>
+	
 	<div class="jumbotron text-center" style="margin-bottom: 0">
+	<form id="headerSearchForm" method="post" action="/product?cmd=search">
+		<input style="width: 20%;" name="keyword" 
+			placeholder="상품명 또는 브랜드명으로 검색" class="headerSearchForm-input">
+		<button class="headerSearchForm-btn">
+			<i class="tiny material-icons">search</i>
+		</button>
+	</form>
+	
 	
 		<div style="text-align: right;">
 			<% if(session.getAttribute("USER_ID")==null){ %>
@@ -56,7 +65,7 @@
 	
 		<h1>My First Shop Webpage</h1>
 <!-- 		<img src="images/706389.jpg" alt="" /> -->
-		<p>Resize this responsive page to see the effect</p>
+ 		<p>Resize this responsive page to see the effect</p>
 	</div>
 	
 	<nav class="navbar navbar-expand-sm bg-dark navbar-dark" style="text-align: center;">
@@ -75,7 +84,41 @@
 		</div>
 	</nav>
 	</div>
-	<img src="images/MainImage.png" style="display: block; margin: 0px auto; margin-top:50px;" /> 
+	
+	
+<div id="demo" class="carousel slide" data-ride="carousel">
+	
+	<!-- Indicatorst -->
+	<ul class="carousel-indicators">
+		<li data-target="#demo" data-slide-to="0" class="active"></li>
+		<li data-target="#demo" data-slide-to="1"></li>
+		<li data-target="#demo" data-slide-to="2"></li>
+	</ul>
+	
+	<!-- The slideshow -->
+	<div class="carousel-inner">
+		<div class="carousel-item active">
+			<img src="images/bannerImage0.jpg" style="width: inherit; max-width: 100%; height: auto;" />
+		</div>
+		<div class="carousel-item">
+			<img src="images/bannerImage1.jpg" style="width: inherit; max-width: 100%; height: auto;" />
+		</div>
+		<div class="carousel-item">
+			<img src="images/bannerImage2.jpg" style="width: inherit; max-width: 100%; height: auto;" />
+		</div>
+	</div>
+	
+	<!-- Left and right controls -->
+	<a class="carousel-control-prev" href="#demo" data-slide="prev">
+		<span class="carousel-control-prev-icon"></span>
+	</a>
+	<a class="carousel-control-next" href="#demo" data-slide="next">
+		<span class="carousel-control-next-icon"></span>
+	</a>
+</div>
+
+	<h2 style="text-align: center; margin-top: 50px;">Today's Best</h2>
+	
 	<%@ include file="../layout/footer.jsp"%>
 </body>
 </html>

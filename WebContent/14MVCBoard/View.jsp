@@ -42,6 +42,13 @@
 </head>
 <body>
 	<div class="jumbotron text-center" style="margin-bottom: 0">
+		<form id="headerSearchForm" method="post" action="/product?cmd=search">
+			<input style="width: 20%;" name="keyword"
+				placeholder="상품명 또는 브랜드명으로 검색" class="headerSearchForm-input">
+			<button class="headerSearchForm-btn">
+				<i class="tiny material-icons">search</i>
+			</button>
+		</form>
 
 		<div style="text-align: right;">
 			<%
@@ -83,7 +90,7 @@
 		</div>
 	</nav>
 	</div>
-	<h2 style="text-align: center; margin-top: 50px;">Detail View</h2>
+	<h2 style="text-align: center; margin-top: 50px;">Review</h2>
 	<table border="5" width="70%"
 		style="margin-right: auto; margin-left: auto; margin-top: 50px;">
 		<colgroup>

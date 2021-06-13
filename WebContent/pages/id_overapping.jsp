@@ -3,6 +3,15 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
 	pageEncoding="UTF-8"%>
 <!DOCTYPE html>
+
+<%
+String Id = request.getParameter("Id");
+System.out.println(Id);
+
+MembershipDAO dao = new MembershipDAO();
+boolean check = dao.checkId(Id);
+%>
+
 <html>
 
 <head>
@@ -28,7 +37,19 @@
 	<h3>
 		입력한 아이디 :
 		<%=request.getParameter("id") %></h3>
-
+		
+	
+	<%
+		if(check==true){
+			out.println("중복된 아이디가 있습니다. 다른아이디를 입력하세요");
+		}
+		else{
+			out.println("사용 가능한 아이디입니다.");
+		}
+	%>
+	<a href="#" onclick="self.close();">닫기</a>
+	
+	
 	<h3>아이디가 중복되었을때 재입력한 아이디</h3>
 	<form name="overlapFrm">
 		<input type="text" name="retype_id" size="20" /> <input type="button"

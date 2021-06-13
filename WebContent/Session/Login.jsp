@@ -62,15 +62,26 @@
 </head>
 <body>
 	<div class="jumbotron text-center" style="margin-bottom: 0">
+		<form id="headerSearchForm" method="post" action="/product?cmd=search">
+			<input style="width: 20%;" name="keyword"
+				placeholder="상품명 또는 브랜드명으로 검색" class="headerSearchForm-input">
+			<button class="headerSearchForm-btn">
+				<i class="tiny material-icons">search</i>
+			</button>
+		</form>
 		<div style="text-align: right;">
-			<% if(session.getAttribute("USER_ID")==null){ %>
-				<a href="Login.jsp">LogIn</a>
-			<% }
-			else{ %>
-				<a href="Logout.jsp">LogOut</a>
-			<% } %>
-			&nbsp;&nbsp;&nbsp;
-			<a href="SignUp.jsp">SignUp</a>
+			<%
+			if (session.getAttribute("USER_ID") == null) {
+			%>
+			<a href="Login.jsp">LogIn</a>
+			<%
+			} else {
+			%>
+			<a href="Logout.jsp">LogOut</a>
+			<%
+			}
+			%>
+			&nbsp;&nbsp;&nbsp; <a href="SignUp.jsp">SignUp</a>
 		</div>
 		<h1>My First Shop Webpage</h1>
 		<p>Resize this responsive page to see the effect</p>
@@ -117,14 +128,14 @@
 			</tr>
 		</table>
 	</form>
-	<div style="text-align:center; margin-top:50px;">
-		<a href="FindAccount.jsp">아이디 찾기</a>&nbsp&nbsp&nbsp&nbsp
-		<a href="FindPassword.jsp">비밀번호 찾기</a>
+	<div style="text-align: center; margin-top: 50px;">
+		<a href="FindAccount.jsp">아이디 찾기</a>&nbsp&nbsp&nbsp&nbsp <a
+			href="FindPassword.jsp">비밀번호 찾기</a>
 	</div>
 	<%
 	} else {
 	%>
-	
+
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="stylesheet"
 		href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
@@ -134,17 +145,28 @@
 		src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
 	<script
 		src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
-	
+
 	<div class="jumbotron text-center" style="margin-bottom: 0">
+		<form id="headerSearchForm" method="post" action="/product?cmd=search">
+			<input style="width: 20%;" name="keyword"
+				placeholder="상품명 또는 브랜드명으로 검색" class="headerSearchForm-input">
+			<button class="headerSearchForm-btn">
+				<i class="tiny material-icons">search</i>
+			</button>
+		</form>
 		<div style="text-align: right;">
-			<% if(session.getAttribute("USER_ID")==null){ %>
-				<a href="Login.jsp">LogIn</a>
-			<% }
-			else{ %>
-				<a href="Logout.jsp">LogOut</a>
-			<% } %>
-			&nbsp;&nbsp;&nbsp;
-			<a href="SignUp.jsp">SignUp</a>
+			<%
+			if (session.getAttribute("USER_ID") == null) {
+			%>
+			<a href="Login.jsp">LogIn</a>
+			<%
+			} else {
+			%>
+			<a href="Logout.jsp">LogOut</a>
+			<%
+			}
+			%>
+			&nbsp;&nbsp;&nbsp; <a href="SignUp.jsp">SignUp</a>
 		</div>
 		<h1>My First Shop Webpage</h1>
 		<p>Resize this responsive page to see the effect</p>
@@ -170,12 +192,13 @@
 		</div>
 	</nav>
 	</div>
-	
-	<table border='5' 
+
+	<table border='5'
 		style="margin-right: auto; margin-left: auto; margin-top: 75px;">
 		<tr>
 			<td style="text-align: center;"><%=session.getAttribute("USER_NAME")%>
-				회원님, 로그인 하셨습니다. <br /> 즐거운 시간 보내세요 ^^* <br /> <a href="../index.jsp">[쇼핑하러 가기]</a></td>
+				회원님, 로그인 하셨습니다. <br /> 즐거운 시간 보내세요 ^^* <br /> <a
+				href="../index.jsp">[쇼핑하러 가기]</a></td>
 		</tr>
 	</table>
 	<%
@@ -184,7 +207,7 @@
 	<h3 style="color: black; text-align: center; margin-top: 50px;">
 		<%=request.getAttribute("ERROR_MSG") == null ? "" : request.getAttribute("ERROR_MSG")%></h3>
 	</div>
-	
+
 	<%@ include file="../layout/footer.jsp"%>
 </body>
 </html>

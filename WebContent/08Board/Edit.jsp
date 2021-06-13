@@ -11,8 +11,8 @@ String num = request.getParameter("num");
 BoardDAO dao = new BoardDAO(application);
 BoardDTO dto = dao.selectView(num);
 //작성자 본인만 수정하기 페이지에 들어올 수 있다.
-String session_id = (String)session.getAttribute("USER_ID");
-if(!session_id.equals(dto.getId())){
+String session_id = (String) session.getAttribute("USER_ID");
+if (!session_id.equals(dto.getId())) {
 	//작성자가 아니라면 경고창을 띄우고 뒤로 이동한다.
 	JSFunction.alertBack("작성자 본인만 수정할 수 있습니다.", out);
 	return;
@@ -57,14 +57,13 @@ dao.close();
 }
 </style>
 <script type="text/javascript">
-	
-	function checkValidate(f){
-		if(f.title.value==""){
+	function checkValidate(f) {
+		if (f.title.value == "") {
 			alert("제목을 입력하세요");
 			f.title.focus();
 			return false;
 		}
-		if(f.content.value==""){
+		if (f.content.value == "") {
 			alert("내용을 입력하세요");
 			f.content.focus();
 			return false;
@@ -74,6 +73,13 @@ dao.close();
 </head>
 <body>
 	<div class="jumbotron text-center" style="margin-bottom: 0">
+		<form id="headerSearchForm" method="post" action="/product?cmd=search">
+			<input style="width: 20%;" name="keyword"
+				placeholder="상품명 또는 브랜드명으로 검색" class="headerSearchForm-input">
+			<button class="headerSearchForm-btn">
+				<i class="tiny material-icons">search</i>
+			</button>
+		</form>
 
 		<div style="text-align: right;">
 			<%
@@ -125,18 +131,19 @@ dao.close();
 		반드시 게시물의 일련번호도 전달되어야 한다.
 		따라서 화면상에서는 보이지 않는 hidden입력상자를 사용한다.
 	-->
-		<input type="hidden" name="num" value="<%=dto.getNum() %>" />
+		<input type="hidden" name="num" value="<%=dto.getNum()%>" />
 
-		<table border="5" width="70%" style="display: table; margin-right: auto; margin-left: auto;">
+		<table border="5" width="70%"
+			style="display: table; margin-right: auto; margin-left: auto;">
 			<tr>
 				<td>제목</td>
 				<td><input type="text" name="title" style="width: 90%;"
-					value="<%=dto.getTitle() %>" /></td>
+					value="<%=dto.getTitle()%>" /></td>
 			</tr>
 
 			<tr>
 				<td>내용</td>
-				<td><textarea name="content" style="width: 90%; height: 100px;"><%=dto.getContent() %></textarea>
+				<td><textarea name="content" style="width: 90%; height: 100px;"><%=dto.getContent()%></textarea>
 				</td>
 			</tr>
 
